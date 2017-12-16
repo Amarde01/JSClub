@@ -50,6 +50,7 @@ document.getElementById("jsbod").innerHTML = "JavaScript in Body";
 <button type="button" onclick="exFunction()">External File!</button>
 
 <script src="C:\Users\Antonio\Documents\GitHub\JSClub\Code Examples\Folder\ExternalFile.js"></script>
+<script> //make sure this is the correct path or it will not work! </script>
 
 <p id="exfol"></p>
 
@@ -77,6 +78,22 @@ x = 5;
 y = 9;
 z = x + y;
 document.getElementById("var").innerHTML = z;
+</script>
+
+<p>
+<img id="display-image" onclick="swapImage()" src="ClickMe.png" width="128" height="128"/>
+</p>
+
+<script>
+function swapImage() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("ClickMe.png")) {
+imageDisplayed.src = "ClickMe2.png";
+}
+else {
+imageDisplayed.src = "ClickMe.png";
+}
+}
 </script>
 
 </body>
